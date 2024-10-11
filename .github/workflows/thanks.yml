@@ -2,13 +2,13 @@ name: thanks
 
 on:
   issues:
-    types: opened
+    types: opened 
   workflow_dispatch: # manual
 
 jobs:
   thanks:
     runs-on: ubuntu-latest
-    permissions:
+    permissions: 
       issues: write
     steps:
       - uses: actions/github-script@v7
